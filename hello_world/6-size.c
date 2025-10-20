@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main() {
+  
+/* Determine and Print the size of char */
+printf("Size of a char: %u bytes(s)\n", sizeof(char));
+    
+/* Determine and Print the size of int */
+printf("Size of int: %u bytes(s)\n", sizeof(int));
+
+/* Determine and Print the size of long int */
+printf("Size of long int: %u bytes(s)\n", sizeof(long int));
+
+/* Determine and Print the size of long long int */
+printf("Size of long long int: %u bytes(s)\n", sizeof(long long int));
+
+/* Determine and Print the size of float */
+printf("Size of a float: %u bytes(s)\n", sizeof(float));
+
+return 0;
+
+}
