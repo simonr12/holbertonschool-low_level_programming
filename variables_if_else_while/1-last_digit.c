@@ -23,12 +23,12 @@ int lastdigit;
 lastdigit = n % 10;
 
 
-if ($lastdigit(n) > 5)
+if (lastdigit > 5)
 {
 printf("Last digit of %d is greater than 5\n", n, lastdigit);
 }
 
-else if ($lastdigit(n) == 0)
+else if (lastdigit == 0)
 {
 printf("Last digit of %d is 0\n", n, lastdigit);
 }
