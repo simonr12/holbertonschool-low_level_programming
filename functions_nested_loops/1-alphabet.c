@@ -6,10 +6,7 @@
  * Return: Always 0 (Success)
  */
 
-/* function : print alphabet in lower case */
-
-
-void print_alphabet(void)
+void print_alphabet(void)  /* function : print alphabet in lower case */
 {
 char L;
 for (L = 'a'; L <= 'z'; L++)
