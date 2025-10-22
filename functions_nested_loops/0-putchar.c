@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
+
 
 /**
  * main - Entry point
@@ -11,7 +11,6 @@
 
 int main(void)
 {
-
 char text[] = "_putchar";
 int i;
 
@@ -23,5 +22,4 @@ _putchar(text[i]);
 _putchar('\n');
 
 return(0);
-
 }
