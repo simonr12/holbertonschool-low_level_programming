@@ -12,14 +12,12 @@ int print_last_digit(int n)
 int lastD;
 lastD = n % 10;
 
-if (lastD > 0)
+if (lastD < 0)
 {
 	lastD = -lastD;
 }
 
-else
-{
-return (_putchar(lastD + '0'));
+_putchar(lastD + '0');
 return (lastD);
-}
+
 }
