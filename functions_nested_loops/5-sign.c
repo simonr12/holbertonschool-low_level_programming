@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - Entry point
+ * print_sign - print sign of a number
  *
  *@n: the variable to check
  *Returns 1 and prints + if n is greater than zero
