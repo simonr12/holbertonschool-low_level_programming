@@ -2,24 +2,33 @@
 #include <stddef.h>
 
 /**
- * _strchr - locates a character in a string
- * @s: string to search in
- * @c: character to be searched
+ * _strspn - get the lenghth of a prefix string
+ * @s: string to search
+ * @accept: accepted characters
  *
- * Return: the character
+ * Return: the lenght of prefix
  */
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	while (*s)
+	unsigned int i, j, k;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*s == c)
-			return (s);
-		s++;
+		k = 0;
+
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				k = 1;
+				break;
+			}
+		}
+
+		if (!k)
+			return (i);
 	}
 
-	if (c == '\0')
-		return (s);
-
-	return (NULL);
+	return (i);
 }
