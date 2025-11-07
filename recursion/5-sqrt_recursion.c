@@ -4,7 +4,7 @@
 /**
  * _sqrt_recursion - returns the natural square root of a number
  *
- * @n: the number
+ * @n: he number
  *
  *Return: If n dont have a natural square root the function should return -1
  */
