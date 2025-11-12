@@ -11,19 +11,22 @@
  * Return: Pointer to the allocated memory
  *         NULL if allocation fails or if nmemb or size is 0
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-
-	void *ptr;
+	unsigned int i, total;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	ptr = malloc(nmemb * size);
+	total = nmemb * size;
+	ptr = malloc(total);
 	if (ptr == NULL)
 		return (NULL);
 
-	memset(ptr, 0, nmemb * size);
+	for (i = 0; i < total; i++)
+		ptr[i] = 0;
 
-	return (ptr);
+	return ((void *)ptr);
 }
