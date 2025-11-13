@@ -3,6 +3,14 @@
 
 int _putchar(char c);
 
+/**
+ * struct dog - information about a dog
+ *
+ * @name: Dog's name
+ * @age: Dog's age
+ * @owner: Dog's owner
+ */
+
 typedef struct dog
 {
 	char *name;
